@@ -10,8 +10,8 @@ ElectricData_t electricData;
 // {
 //     if(hadc->Instance == ADC1)
 //     {
-//         electricData.gf_volt = (float)Power_parameters[0] * 3.3f / 4095.0f;
-//         electricData.fj_volt = (float)Power_parameters[1] * 3.3f / 4095.0f;
+//         electricData.gf_volt = (float)Power_parameters[0] * 3.3f *16.0f / 4095.0f;
+//         electricData.fj_volt = (float)Power_parameters[1] * 3.3f *40.0f / 4095.0f;
 
 //         BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 //         vTaskNotifyGiveFromISR(menuHandle, &xHigherPriorityTaskWoken);
