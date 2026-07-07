@@ -1,0 +1,13 @@
+build
+mx.scratch
+!.settings
+.settings/bundles-lock.store.json
+.settings/bundles.store.json
+.settings/ide.store.json
+.vscode/c_cpp_properties.json
+.vscode/settings.json
+cmake/gcc-arm-none-eabi.cmake
+cmake/starm-clang.cmake
+cmake/stm32cubemx/CMakeLists.txt
+.clangd
+.mxproject
