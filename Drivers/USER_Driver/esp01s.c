@@ -77,9 +77,10 @@ static void ParseMqttCommand(void)
     p = strstr(R_data,"request_id=");
 
     if(p == NULL)
-        printf("no request_id\r\n");
-        return;
-
+    {    
+         printf("no request_id\r\n");
+         return;
+    }
     p += strlen("request_id=");
 
     char *end = strchr(p,'"');
