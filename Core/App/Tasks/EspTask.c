@@ -79,12 +79,12 @@ void EspTask(void *argument)
 
         /*
         ==========================================
-        2秒上传数据
+        500毫秒上传数据
         ==========================================
         */
         if(mqtt_connected)
         {
-            if(HAL_GetTick()-last_pub >=2000)
+            if(HAL_GetTick()-last_pub >=500)
             {
 
                 last_pub = HAL_GetTick();
